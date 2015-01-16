@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+input {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#large-logo {
+	text-align: center;
+	font-family: "Sacramento";
+	font-size: 64px;
+}
+
+#splash {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#search-address-input {
+	height: 60px;
+	width: 100%;
+	border: 1px solid #000;
+	font-size: 24px;
+	text-indent: 10px;
+}
+
+#main-content {
+	margin-bottom: 80px;
+}
+
+#flowers {
+		position: fixed;
+		bottom: 40px;
+		height: 40px;
+		left: 0;
+		right: 0;
+		background-image: url(../img/flowers.png);
+		background-repeat: repeat-x;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	border-top: 1px solid #000;
+	background-color: #efe8e4;
+}
