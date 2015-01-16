@@ -9,37 +9,30 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
-    	<div class="container space-footer">
-            <div class="row">
-                <div class="column large-2 float-right">
-                    <a href="user-login.html">
-                        <button class="button-secondary">
-                            Login
-                        </button>
-                    </a>
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div id="small-logo" class="logo">
+                        <a href="index.html">inspectjoy</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div id="splash" class="column">
-                    <img src="img/house.png">
-                </div>
-            </div>
+        </div>
+    	<div class="container space-header space-footer">
     		<div class="row">
-    			<div id="large-logo" class="centered-text logo">
-    				inspectjoy
-    			</div>
+                <div id="report" class="column large-8 centered">
+                    <div id="address"></div>
+                    <div id="mls"></div>
+                    <div id="inspector-name"></div>
+                    <div id="inspection-date"></div>
+                </div>
     		</div>
     		<div class="row">
-                <div class="large-3 column">&nbsp</div>
-    			<div class="large-8 column">
-    				<input type="text" id="search-address-input" placeholder="Find inspections by address or mls">
-    			</div>
-                <div class="large-2 column">
-                    <button class="large-button button-primary">
-                        Search
+                <div class="column large-4 centered">
+                    <button id="buy-button" class="large-button button-primary">
+                        Buy Report
                     </button>
                 </div>
-                <div class="large-3 column"></div>
     		</div>
     	</div>
         <div id="flowers"></div>
