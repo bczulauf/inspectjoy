@@ -28,7 +28,7 @@ $(function() {
 function displayReportSummary(name, address, redfin, mls, date) {
 	$("#address").text(address);
 	$("#mls").text(mls);
-	$("#mls").append("<a href=" + redfin + ">Redfin listing</a>");
+	$("#mls").html("<a href=" + redfin + ">Redfin listing</a>");
 	$("#inspector-name").text(name);
 	$("#inspection-date").text(date);
 };
