@@ -1,0 +1,2 @@
+# inspectjoy
+Another dumb idea
