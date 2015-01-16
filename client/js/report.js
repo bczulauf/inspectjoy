@@ -5,28 +5,30 @@ $(function() {
 	$('#report-button').click(function () {
 	  var name = $('#nameInput').val();
 	  var address = $('#addressInput').val();
+	  var redfin = $("#redfinInput").val();
 	  var mls = $('#mlsInput').val();
 	  var date = $('#dateInput').val();
 
-	  myDataRef.push({name: name, address: address, mls: mls, date: date});
+	  myDataRef.push({name: name, address: address, mls: mls, redfin: redfin, date: date});
 
 	  $('#nameInput').val('');
 	  $('#addressInput').val('');
+	  $('#redfinInput').val('');
 	  $('#mlsInput').val('');
 	  $('#dateInput').val('');
 	});
 
   myDataRef.on('child_added', function(snapshot) {
 	  var report = snapshot.val();
-	  console.log(report);
-		displayReportSummary(report.name, report.address, report.mls, report.date);
+
+		displayReportSummary(report.name, report.address, report.mls, report.redfin, report.date);
 	});
 });
 
-function displayReportSummary(name, address, mls, date) {
-	console.log(name);
+function displayReportSummary(name, address, redfin, mls, date) {
 	$("#address").text(address);
 	$("#mls").text(mls);
+	$("#mls").append("<a href=" + redfin + ">Redfin listing</a>");
 	$("#inspector-name").text(name);
 	$("#inspection-date").text(date);
 };
