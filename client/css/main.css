@@ -18,7 +18,11 @@ button {
 	width: 100%;
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
-	outline: 1px solid #000;
+	outline-width: 1px;
+	outline-style: solid;
+	box-sizing: border-box;
+	border-top-width: 1px;
+	border-top-style: solid;
 }
 
 a {
@@ -88,12 +92,16 @@ a {
 
 .button-primary {
 	background-color: #f4cf19;
-	border-color: #e2be0c;
+	border-bottom-color: #e2be0c;
+	outline-color: #c1aa3a;
+	border-top-color: #f2de79;
 }
 
 .button-secondary {
 	background-color: #d5d9db;
-	border-color: #bbbbbc;
+	border-bottom-color: #c4c5c6;
+	border-top-color: #edeeef;
+	outline-color: #bbbbbc;
 }
 
 .centered-text {
